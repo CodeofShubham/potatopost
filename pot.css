@@ -1,11 +1,11 @@
-/* Basic Reset and Variables */
+
 :root {
-    --primary-color: #A0522D; /* Earthy Brown/Sienna - for the potato theme */
-    --secondary-color: #FFC300; /* Bright Yellow/Gold - fun, energetic accent */
-    --accent-color: #FF5733; /* Playful Orange/Red - for CTAs and emphasis */
+    --primary-color: #A0522D; 
+    --secondary-color: #FFC300; 
+    --accent-color: #FF5733;
     --text-color: #333;
-    --background-color: #FFF8E1; /* Light creamy yellow/off-white background */
-    --font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font stack */
+    --background-color: #FFF8E1;
+    --font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 * {
@@ -19,10 +19,9 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
-    padding-top: 70px; /* Space for fixed header */
+    padding-top: 70px; 
 }
 
-/* --- Header & Navigation --- */
 header {
     background-color: white;
     padding: 10px 5%;
@@ -41,7 +40,7 @@ header {
     font-size: 1.8rem;
     font-weight: 900;
     color: var(--primary-color);
-    text-shadow: 1px 1px 0px var(--secondary-color); /* Fun shadow effect */
+    text-shadow: 1px 1px 0px var(--secondary-color);
 }
 
 nav a {
@@ -56,7 +55,6 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* --- Buttons (CTAs) --- */
 .button {
     display: inline-block;
     padding: 12px 25px;
@@ -64,10 +62,10 @@ nav a:hover {
     color: white !important;
     text-decoration: none;
     font-weight: 900;
-    border-radius: 50px; /* Highly rounded, pill-shaped buttons */
+    border-radius: 50px; 
     transition: background-color 0.3s, transform 0.2s;
     font-size: 1.1rem;
-    border: 3px solid var(--primary-color); /* Playful border */
+    border: 3px solid var(--primary-color); 
 }
 
 .button:hover {
@@ -87,13 +85,12 @@ nav a:hover {
     color: white !important;
 }
 
-/* --- Hero Section --- */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 80px 5%;
-    background: linear-gradient(135deg, #FFEFBA 0%, #FFFFFF 100%); /* Light, bright gradient */
+    background: linear-gradient(135deg, #FFEFBA 0%, #FFFFFF 100%);
 }
 
 .hero-content {
@@ -113,7 +110,6 @@ nav a:hover {
     font-weight: 500;
 }
 
-/* Potato Visual Styling */
 .potato-visual {
     background-color: var(--primary-color);
     border-radius: 50%;
@@ -123,9 +119,9 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* Eye-catching, playful shadow */
+   
     box-shadow: 10px 10px 0px var(--secondary-color), 15px 15px 0px var(--accent-color); 
-    transform: rotate(5deg); /* Slightly tilted for fun */
+    transform: rotate(5deg); 
 }
 
 .potato-emoji {
@@ -143,7 +139,6 @@ nav a:hover {
 }
 
 
-/* --- How It Works Section --- */
 .steps-section {
     padding: 60px 5%;
     text-align: center;
@@ -154,7 +149,7 @@ nav a:hover {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: var(--accent-color);
-    text-decoration: underline wavy var(--secondary-color); /* Wavy underline for playfulness */
+    text-decoration: underline wavy var(--secondary-color);
 }
 
 .steps-container {
@@ -168,15 +163,15 @@ nav a:hover {
     max-width: 300px;
     padding: 30px;
     background-color: white;
-    border-radius: 15px; /* More rounded corners */
-    border: 3px dashed var(--primary-color); /* Dashed border for a fun touch */
+    border-radius: 15px; 
+    border: 3px dashed var(--primary-color); 
     box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
     transition: transform 0.3s;
 }
 
 .step:hover {
-    transform: translateY(-5px); /* Lift on hover */
-    background-color: #FEF0C8; /* Slight color change on hover */
+    transform: translateY(-5px); 
+    background-color: #FEF0C8; 
 }
 
 .step h3 {
@@ -189,9 +184,8 @@ nav a:hover {
     font-size: 1.6rem;
 }
 
-/* --- Showcase Section --- */
 .showcase-section {
-    background-color: #E8F5E9; /* A light green to break up the browns/yellows */
+    background-color: #E8F5E9; 
     padding: 50px 5%;
     text-align: center;
 }
@@ -213,7 +207,6 @@ nav a:hover {
 }
 
 
-/* --- Footer --- */
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -233,7 +226,6 @@ footer {
     color: var(--secondary-color);
 }
 
-/* --- Media Queries for Responsiveness --- */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column-reverse;
@@ -256,7 +248,6 @@ footer {
         align-items: center;
     }
 
-    /* Simple mobile nav menu */
     nav {
         display: none; 
     }
@@ -264,4 +255,5 @@ footer {
     header {
         justify-content: center;
     }
+
 }
